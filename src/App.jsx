@@ -1,18 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar/navbar'
 import ItemListContainer from './components/IteamListContainer/ItemListContainer'
+import Greeting from './components/Greeting/Greeting'
+
 
 function App() {
-  
-  const greeting = "Bienvenidos a la tienda de Iphone"
 
   return (
     <>
+  
   <NavBar/>
-  <ItemListContainer mensaje={greeting}/>
+  <Greeting/>
+  <ItemListContainer />
+
+  
 
   </>
   )

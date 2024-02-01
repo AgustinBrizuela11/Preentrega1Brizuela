@@ -1,12 +1,11 @@
 import React from "react";
 import Count from "../Count/Count";
 
-const ItemListContainer = ({mensaje}) => {
+const ItemListContainer = () => {
 
 
     return(
         <>
-         <h1>{mensaje}</h1>
          <Count initial={1} stock={20}/>
         </>
         
